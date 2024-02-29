@@ -1,0 +1,45 @@
+/* table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+} */
+
+
+/* p{
+    color: blue;
+} */
+
+/* Присвоить красный цвет параграфу который находится в теге с классом main */
+
+/* Потомки */
+/* .main p{
+    color: red;
+} */
+
+/* Непоср. вложение */
+/* .main>p{
+    color: green;
+} */
+
+/* Все параграфы которые находятся в div-ах(и с классами и без) */
+/* div p{
+    color: pink;
+} */
+
+
+/* .h1{
+    font-weight: bold;
+    text-align: center;
+}
+
+.block1>.h1{
+    color: blue;
+}
+
+.block2>.h1{
+    color: red;
+} */
+
