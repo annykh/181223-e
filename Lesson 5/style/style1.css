@@ -1,0 +1,20 @@
+p{
+    background-color: beige;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    /* display: inline; */
+}
+
+/* Строчным элементам невозможно присвоить width, height, margin_top, margin-bottom  */
+span{
+    background-color: beige;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    /* display: block; */
+    display: inline-block;
+    /* inline-block - как inline: распологается в строке, размер устанавливается по содежимому, а как block: работают свойства  width, height, margin_top, margin-bottom */
+}
