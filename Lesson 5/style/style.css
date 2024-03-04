@@ -1,0 +1,78 @@
+/* Обнуление стилей */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+body{
+    padding: 20px;
+}
+
+form{
+    width: 70%;
+    border: 1px solid #87CEFA;
+    box-shadow: 0 0 15px 5px #3263cd;
+    border-radius: 10px;
+    padding: 20px;
+    /* Выравнивание формы по центру */
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #87CEFA;
+    padding: 100px 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+}
+
+input, label, textarea, select{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.hiddenlabel{
+    /* Скрываем элемент */
+    display: none;
+}
+
+input, textarea, select{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact input, .contact label, .time input, .time label{
+    /* Возвращаем исходные стили */
+    display: inline;
+    width: auto;
+}
+
+button{
+    background-color: #3263cd;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+.submit{
+    text-align: center;
+}
+
+form>div:hover label, form>div:hover p, form>div:hover input, input:hover::placeholder {
+    color: #3263cd;
+}
+
+button:hover{
+    background-color: #5b82d7;
+}
+
