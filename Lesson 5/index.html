@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="header">
+            <h1>Tour Booking Form</h1>
+        </div>
+        <div class="name">
+            <!-- Атрибут for связывает текст в <label> с контролами формы.
+            Связь устанавливается парой атрибутов for-id, где for одного элемента ссылается на id другого (или других).-->
+            <label for="firstname">Name</label>
+            <!-- Placeholder - атрибут, который подсказывает пользователю, что именно нужно ввести в поле ввода (обычно это пример слова или фразы). Выглядит это как будто поле уже заполнено, только гораздо бледнее. А ещё значение атрибута исчезает, как только пользователь начинает вводить текст. -->
+            <input type="text" placeholder="First name" id="firstname">
+            <label for="lastname" class="hiddenlabel">Last name</label>
+            <input type="text" placeholder="Last name" id="lastname">
+        </div>
+        <div class="email">
+            <label for="email">Email</label>
+            <input type="email" placeholder="name@mail.ru" id="email">
+        </div>
+        <div class="phone">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="###-###-####">
+        </div>
+        <div class="date">
+            <label for="date">When are you planning to visit?</label>
+            <input type="date" id="date">
+        </div>
+        <div class="group">
+            <label for="group">How many people are in your group?</label>
+            <input type="number" id="group">
+        </div>
+        <div class="tour">
+            <label for="tour">Which tour are you most interested in?</label>
+            <select id="tour">
+                <!-- Если выбран какой-то пункт списка, то при отправке формы на сервер будет передано значение атрибута value этого пункта. Если атрибут не задан, то при отправке будет использоваться текстовое содержимое тега <option>. -->
+                <option value="-">*Please select*</option>
+                <option value="usa">USA</option>
+                <option value="eu">Europe</option>
+                <option value="uae">UAE</option>
+                <option value="mald">Maldives</option>
+            </select>
+        </div>
+        <div class="contact">
+            <p>What is the best way to contact you?</p>
+            <div>
+                <input type="checkbox" id="chk1">
+                <label for="chk1">Phone</label>
+            </div>
+            <div>
+                <input type="checkbox" id="chk2">
+                <label for="chk2">Email</label>
+            </div>
+            <div>
+                <input type="checkbox" id="chk3">
+                <label for="chk3">Either</label>
+            </div>
+        </div>
+        <div class="time">
+            <p>If phone, when is the best time of day for a call-back?</p>
+            <div>
+                <!-- Атрибут name указывает на имя группы, к которой принадлежит элемент-радиокнопка. Из каждой группы мы можем выбрать только один переключатель.  -->
+                <input type="radio" id="rd1" name="time">
+                <label for="rd1"> 8 - 11 AM</label>
+            </div>
+            <div>
+                <input type="radio" id="rd2" name="time">
+                <label for="rd2"> 12 - 4 PM</label>
+            </div>
+            <div>
+                <input type="radio" id="rd3" name="time">
+                <label for="rd3"> 6 - 10 PM</label>
+            </div>
+        </div>
+        <div class="else">
+            <!-- Тег <textarea> используется для создания многострочного поля ввода. -->
+            <label for="else">Anything else we should know?</label>
+            <textarea id="else"></textarea>
+        </div>
+        <div class="submit">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</body>
+</html>
